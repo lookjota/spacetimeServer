@@ -589,3 +589,17 @@ tipado que pode ser usado para ler e escrever dados programaticamente em um banc
 #### Criando o front-end da nossa aplicacao
 
 - Usando React com frameWork next
+
+### comando para fazer atualizacao no banco de dados
+
+$ npx prisma migrate reset
+$ npx prisma migrate dev
+
+- ver banco de dados
+$ npx prisma studio
+
+### install dependencies zod
+
+$ npm i zod 
+
+- dependencia de validacao 
