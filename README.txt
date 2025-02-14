@@ -603,3 +603,8 @@ $ npx prisma studio
 $ npm i zod 
 
 - dependencia de validacao 
+
+### dependencies install fastify/criados
+$ npm i @fastify/cors
+
+- instruir quais URL de front-end o nosso beck-end vai poder ser acessado
