@@ -608,3 +608,47 @@ $ npm i zod
 $ npm i @fastify/cors
 
 - instruir quais URL de front-end o nosso beck-end vai poder ser acessado
+
+
+### install dependencies dotenv
+
+$ npm i dotenv -D
+
+- para que ele leia as variaveis ambiente e converta em variaveis
+no process.env 
+
+### Install dependencies axios
+
+$ npm i axios 
+
+- melhor forma de fazer requisicoes http eh usando axios
+- eh uma api simples e leve
+
+### JWT
+
+- dentro do contexto de autenticacao
+- trabalhando com JWT
+- json web token
+
+- eh basicamente um token criado pelo nosso back-end e enviado para front-end
+pro front-end usar esse token nas requisicoes que ele faz pro back-end para
+podermos identificar um usuario logado
+- ou seja, quando fizermos esse processe de cadastro de usuario, 
+nao so o usuario, agente vai criar tbm pro front-end acessar
+um JWL que eh um token 
+- que o front-end vai poder utilizar por quanto tempo que vamos descidir
+que o usuario vai poder ficar logado,
+- o Front-end vai guardar essa informacao la, nos cookies ou na memoria
+- toda vez que o front-end fizer uma requisicao pro back-end
+ele vai enviar esse token junto, e o beck-end vai saber que esse token,
+pertence a tal usuario, podendo identificar esse usuario nas proximas
+requisicoes
+
+- por enquanto so conseguimos identificar o usuario na rota register
+- esta estatico
+
+- para fazer da forma correta iremos usar a estrategia JWL
+
+### Install dependencies JWL
+
+$ npm i @fastify/jwt
