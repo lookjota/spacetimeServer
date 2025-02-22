@@ -660,3 +660,15 @@ $ http POST localhost:3333/register code=5613622d6c6514ada6e6 --json
 
 - usando token valido
 $ http -A bearer -a eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9hbyBDYXJsb3MgTGlzYm9hIiwiYXZhdGFyVXJsIjoiaHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91Lzc3NzUwOTYwP3Y9NCIsInN1YiI6ImNtNzlkajM4ODAwMDB1bzZ3am83ZWtyeHkiLCJpYXQiOjE3Mzk4ODI0MzcsImV4cCI6MTc0MDMxNDQzN30.5gB2moe-WXnofvRgwyZz0HVO_GFqdoWgMpOdh8yWFjY localhost:3333/memories
+
+### install plugin
+$ npm i @fastify/multipart
+
+- enviar qualquer tipo de dados
+- padrao de envio de formulario
+
+### install dependencies 
+$ npm i @fastify/static
+
+- faz uma pasta do back-end ficar publica podendedo ser acessada pelo
+localhost
