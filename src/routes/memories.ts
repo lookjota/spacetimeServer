@@ -24,6 +24,7 @@ export async function memoriesRoutes(app:FastifyInstance) {
         id: memory.id,
         coverUrl: memory.coverUrl,
         excerpt: memory.content.substring(0, 115).concat('...'),
+        createdAt: memory.createdAt,
       }
     })
   })
@@ -104,6 +105,7 @@ export async function memoriesRoutes(app:FastifyInstance) {
     return memory
     })
 
+  
   app.delete('/memories/:id', async (request, reply) => {
     const paramsSchema = z.object({
       id: z.string().uuid(),
@@ -124,7 +126,7 @@ export async function memoriesRoutes(app:FastifyInstance) {
       where: {
         id,
       },
-    })
+  })
   })
     
 }

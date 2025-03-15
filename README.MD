@@ -667,8 +667,14 @@ $ npm i @fastify/multipart
 - enviar qualquer tipo de dados
 - padrao de envio de formulario
 
+### pipeLine
+
+- permite verificar quando que o processo de stream chegou ate o final
+
 ### install dependencies 
 $ npm i @fastify/static
 
-- faz uma pasta do back-end ficar publica podendedo ser acessada pelo
-localhost
+- faz com que uma paginado do back-end fique publica
+
+
+
